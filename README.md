@@ -71,6 +71,6 @@ or
 via Curl
 
 ```
-curl -X POST localhost:8081/api/bags -H 'Content-type:application/json' -d '{"numberOfApples":13,"supplier": "Pink Lady","packedTime": "2022-07-12T14:13:12","price": 4}'
+curl -X POST localhost:8081/api/bags -H 'Content-type:application/json' -d '{"numberOfApples":13,"supplier": "Pink Lady","price": 4}'
 
 ```
