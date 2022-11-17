@@ -5,7 +5,7 @@ This application manages apple bags on the apple market.
 
 ## How to Run
 - Clone this repository.
-- Make sure you are using JDK 17 and Maven 3.X
+- Make sure you are using JDK 19 and Maven 3.X
 - You can build the project by running `mvn clean package`
 - Once successfully built, you can run the service by following command *(assuming that you have Maven already instlalled)*
 
@@ -33,8 +33,10 @@ Here are some endpoints you can call:
 
 via Postman
 ```
- GET http://localhost:8081/api/bags
+ GET http://localhost:8081/api/bags                  // by default will return 3 bags
+ GET http://localhost:8081/api/bags?numberOfBags=X  // will return X bags
 ```
+
 or 
 
 via Curl
@@ -55,7 +57,7 @@ via Postman
     "numberOfApples" : 3,
     "supplier": "Royal Gala",
     "price" : 4,
-	  "packedTime" : "2022-11-16T14:13:12"
+	"packedTime" : "2022-11-16T14:13:12"
   }
 
 ```
