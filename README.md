@@ -32,9 +32,14 @@ Here are some endpoints you can call:
 **1. Get list of apple bags**
 
 via Postman
+
 ```
+
  GET http://localhost:8081/api/bags                  // by default will return 3 bags
+ 
+ 
  GET http://localhost:8081/api/bags?numberOfBags=X  // will return X bags
+ 
 ```
 
 or 
