@@ -61,8 +61,7 @@ via Postman
   {
     "numberOfApples" : 3,
     "supplier": "Royal Gala",
-    "price" : 4,
-	"packedTime" : "2022-11-16T14:13:12"
+    "price" : 4
   }
 
 ```
