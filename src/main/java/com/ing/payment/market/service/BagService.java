@@ -35,11 +35,7 @@ public class BagService {
         bag.setId(UUID.randomUUID().toString());
         bag.setNumberOfApples(payload.getNumberOfApples());
         bag.setSupplier(payload.getSupplier());
-        if(payload.getPackedTime()== null){
-            bag.setPackedTime(LocalDateTime.now());
-        }else{
-            bag.setPackedTime(payload.getPackedTime());
-        }
+        bag.setPackedTime(LocalDateTime.now());
         bag.setPrice(payload.getPrice());
 
         bagsDataList.add(bag);
