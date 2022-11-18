@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class BagService {
@@ -14,7 +15,9 @@ public class BagService {
 
     public List<Bag> getListOfAppleBags(int desiredNumberOfBags) {
 
-        return bagsDataList.subList(Math.max(bagsDataList.size() - desiredNumberOfBags, 0), bagsDataList.size());
+        List<Bag> sortedBagList = bagsDataList.stream().sorted(Comparator.comparing(Bag::getPackedTime).reversed()).collect(Collectors.toList());
+
+        return sortedBagList.stream().limit(desiredNumberOfBags).collect(Collectors.toList());
     }
 
     public void addBag(AddBagDTO payload) {

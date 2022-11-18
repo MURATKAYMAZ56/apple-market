@@ -7,10 +7,11 @@ This application manages apple bags on the apple market.
 - Clone this repository.
 - Make sure you are using JDK 19 and Maven 3.X
 - You can build the project by running `mvn clean package`
+- NOTE: If maven not installed employ  `./mvnw clean package`
 - Once successfully built, you can run the service by following command *(assuming that you have Maven already instlalled)*
 
 ```
-     java -jar /target/market-0.0.1-SNAPSHOT.jar
+     java -jar target/market-0.0.1-SNAPSHOT.jar
 or
      mvn spring-boot:run
 ```
